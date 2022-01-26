@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenController">
+   <children>
+      <ImageView fitHeight="415.0" fitWidth="533.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/loader.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273c75" height="77.0" layoutY="323.0" stroke="#273c75" strokeType="INSIDE" width="533.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="29.0" prefHeight="16.0" prefWidth="492.0" text="Student Attendance System">
+         <font>
+            <Font name="Ubuntu" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="16.0" layoutY="334.0" prefHeight="16.0" prefWidth="501.0" text="Initializing" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="370.0" text="Copyright © 2022 Thakshila Nuwangi. All Rights reserved" textFill="WHITE" />
+   </children>
+</AnchorPane>
