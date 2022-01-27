@@ -12,7 +12,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="705.0" prefWidth="801.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAdminFormController">
    <children>
       <Label layoutX="133.0" layoutY="182.0" text="Welcome to Students Attendance System!" textFill="#40739e">
@@ -62,11 +61,11 @@
       </VBox>
       <HBox layoutX="368.0" layoutY="478.0" prefHeight="20.0" prefWidth="306.0">
          <children>
-            <Rectangle fx:id="rctOne" arcHeight="5.0" arcWidth="5.0" fill="#c7ecee" height="7.0" stroke="#c7ecee" strokeType="INSIDE" width="61.0" />
-            <Rectangle fx:id="rctTwo" arcHeight="5.0" arcWidth="5.0" fill="#48dbfb" height="7.0" stroke="#48dbfb" strokeType="INSIDE" width="61.0" />
-            <Rectangle fx:id="rctThree" arcHeight="5.0" arcWidth="5.0" fill="#0abde3" height="7.0" stroke="#0abde3" strokeType="INSIDE" width="61.0" />
-            <Rectangle fx:id="rctFour" arcHeight="5.0" arcWidth="5.0" fill="#2e86de" height="7.0" stroke="#2e86de" strokeType="INSIDE" width="61.0" />
-            <Rectangle fx:id="rctFive" arcHeight="5.0" arcWidth="5.0" fill="#273c75" height="7.0" stroke="#273c75" strokeType="INSIDE" width="61.0" />
+            <Rectangle fx:id="rctOne" arcHeight="5.0" arcWidth="5.0" fill="#c7ecee" height="7.0" stroke="#c7ecee" strokeType="INSIDE" visible="false" width="61.0" />
+            <Rectangle fx:id="rctTwo" arcHeight="5.0" arcWidth="5.0" fill="#48dbfb" height="7.0" stroke="#48dbfb" strokeType="INSIDE" visible="false" width="61.0" />
+            <Rectangle fx:id="rctThree" arcHeight="5.0" arcWidth="5.0" fill="#0abde3" height="7.0" stroke="#0abde3" strokeType="INSIDE" visible="false" width="61.0" />
+            <Rectangle fx:id="rctFour" arcHeight="5.0" arcWidth="5.0" fill="#2e86de" height="7.0" stroke="#2e86de" strokeType="INSIDE" visible="false" width="61.0" />
+            <Rectangle fx:id="rctFive" arcHeight="5.0" arcWidth="5.0" fill="#273c75" height="7.0" stroke="#273c75" strokeType="INSIDE" visible="false" width="61.0" />
          </children>
       </HBox>
       <PasswordField fx:id="txtPassword" layoutX="295.0" layoutY="434.0" prefHeight="35.0" prefWidth="452.0" />
