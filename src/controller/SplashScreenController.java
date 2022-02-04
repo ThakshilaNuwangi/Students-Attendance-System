@@ -91,8 +91,10 @@ public class SplashScreenController {
                         sleep(100);
 
                         Platform.runLater(() -> lblStatus.setText("Obtaining a new Database connection"));
-                        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "mysql");
+                        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance_system", "root", "mysql");
                         sleep(100);
+
+                        DBConnection.getInstance().init(connection);
 
                         Platform.runLater(() -> {
                             lblStatus.setText("Setting up the UI");
