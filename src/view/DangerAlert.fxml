@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="486.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DangerAlertController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="98.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/danger.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="34.0" text="ALERT!" textFill="#cd1b1b">
+         <font>
+            <Font name="Ubuntu" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="163.0" text="Last Recorded Details">
+         <font>
+            <Font name="Ubuntu" size="19.0" />
+         </font></Label>
+      <VBox layoutX="69.0" layoutY="199.0" prefHeight="88.0" prefWidth="109.0" spacing="10.0">
+         <children>
+            <Label text="Id :" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Name :" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Last Record :" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="200.0" layoutY="199.0" prefHeight="88.0" prefWidth="339.0" spacing="10.0">
+         <children>
+            <Label text="2022/DEP08/1001" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Adam Winger" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+            <Label text="2022/01/01 00:00 AM - IN" textFill="#a19a9a">
+               <font>
+                  <Font name="Ubuntu" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="29.0" layoutY="338.0" text="Are you sure you want to continue?">
+         <font>
+            <Font name="Ubuntu Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="353.0" layoutY="390.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Continue">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="112.0" layoutY="390.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Cancel">
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

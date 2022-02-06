@@ -13,17 +13,17 @@
             <Font name="Ubuntu Bold" size="24.0" />
         </font>
     </Label>
-    <Label alignment="CENTER" layoutX="170.0" layoutY="68.0" prefHeight="20.0" prefWidth="460.0" text="Welcome Admin!" textFill="#615b5b">
+    <Label fx:id="lblGreeting" alignment="CENTER" layoutX="170.0" layoutY="68.0" prefHeight="20.0" prefWidth="460.0" text="Welcome Admin!" textFill="#615b5b">
         <font>
             <Font name="Ubuntu" size="17.0" />
         </font>
     </Label>
-   <Button layoutX="54.0" layoutY="130.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
-   <Button layoutX="296.0" layoutY="130.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
-   <Button layoutX="537.0" layoutY="130.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
-   <Button layoutX="54.0" layoutY="352.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
-   <Button layoutX="295.0" layoutY="352.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
-   <Button layoutX="537.0" layoutY="352.0" mnemonicParsing="false" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="54.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnRecordAttendanceOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="296.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnViewReportsOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="537.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnUserProfilesOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="54.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnUserManagementOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="295.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnBackupOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
+   <Button layoutX="537.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnSignOutOnAction" prefHeight="191.0" prefWidth="208.0" style="-fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-background-color: white;" />
    <ImageView fitHeight="142.0" fitWidth="132.0" layoutX="92.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@assets/recordAttendance.jpg" />

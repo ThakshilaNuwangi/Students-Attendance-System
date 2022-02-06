@@ -14,16 +14,16 @@
             <Font name="Ubuntu Bold" size="24.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="121.0" layoutY="71.0" prefHeight="20.0" prefWidth="460.0" text="Welcome User!" textFill="#615b5b">
+      <Label fx:id="lblGreeting" alignment="CENTER" layoutX="121.0" layoutY="71.0" prefHeight="20.0" prefWidth="460.0" text="Welcome User!" textFill="#615b5b">
          <font>
             <Font name="Ubuntu" size="17.0" />
          </font>
       </Label>
-      <Button layoutX="72.0" layoutY="153.0" mnemonicParsing="false" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px;" />
-      <Button layoutX="392.0" layoutY="421.0" mnemonicParsing="false" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
-      <Button layoutX="72.0" layoutY="421.0" mnemonicParsing="false" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
-      <Button layoutX="392.0" layoutY="153.0" mnemonicParsing="false" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
-      <ImageView fitHeight="206.0" fitWidth="190.0" layoutX="96.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btnRecordAttendance" layoutX="72.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnRecordAttendanceOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px;" />
+      <Button fx:id="btnSignOut" layoutX="392.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnSignOutOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
+      <Button layoutX="72.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnUserProfileOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
+      <Button layoutX="392.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnViewReportsOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
+      <ImageView fitHeight="206.0" fitWidth="190.0" layoutX="96.0" layoutY="161.0" onMouseClicked="#recordAttendanceOnMouseClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/recordAttendance.jpg" />
          </image>
@@ -43,7 +43,7 @@
             <Font name="Ubuntu Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="88.0" layoutY="352.0" prefHeight="21.0" prefWidth="207.0" text="[F1] Record Attendance" textFill="#273c75">
+      <Label layoutX="88.0" layoutY="341.0" onMouseClicked="#recordAttendanceOnMouseClick" prefHeight="21.0" prefWidth="207.0" text="[F1] Record Attendance" textFill="#273c75">
          <font>
             <Font name="Ubuntu Bold" size="18.0" />
          </font>
@@ -53,12 +53,12 @@
             <Image url="@assets/uspro.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="441.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="441.0" layoutY="435.0" onMouseClicked="#signOutOnMouseClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/signout.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="458.0" layoutY="599.0" text="[F4] Signout" textFill="#000f35">
+      <Label layoutX="458.0" layoutY="599.0" onMouseClicked="#signOutOnMouseClick" text="[F4] SignOut" textFill="#000f35">
          <font>
             <Font name="Ubuntu Bold" size="18.0" />
          </font>
