@@ -39,7 +39,7 @@
             <Font name="Ubuntu" size="18.0" />
          </font>
       </Label>
-      <Label focusTraversable="false" layoutX="201.0" layoutY="640.0" text="Last recorded attendance">
+      <Label fx:id="lblInfo" focusTraversable="false" layoutX="201.0" layoutY="640.0" text="Last recorded attendance">
          <font>
             <Font name="Ubuntu" size="17.0" />
          </font>

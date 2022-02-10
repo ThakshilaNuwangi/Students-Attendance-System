@@ -36,7 +36,6 @@ public class UserHomeController {
             stage.sizeToScene();
             stage.centerOnScreen();
         });
-
     }
 
     public void btnSignOutOnAction(ActionEvent actionEvent) throws IOException {
