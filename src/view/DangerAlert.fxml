@@ -45,17 +45,17 @@
       </VBox>
       <VBox layoutX="200.0" layoutY="199.0" prefHeight="88.0" prefWidth="339.0" spacing="10.0">
          <children>
-            <Label text="2022/DEP08/1001" textFill="#a19a9a">
+            <Label fx:id="lblId" text="2022/DEP08/1001" textFill="#a19a9a">
                <font>
                   <Font name="Ubuntu" size="16.0" />
                </font>
             </Label>
-            <Label text="Adam Winger" textFill="#a19a9a">
+            <Label fx:id="lblName" text="Adam Winger" textFill="#a19a9a">
                <font>
                   <Font name="Ubuntu" size="16.0" />
                </font>
             </Label>
-            <Label text="2022/01/01 00:00 AM - IN" textFill="#a19a9a">
+            <Label fx:id="lblDate" text="2022/01/01 00:00 AM - IN" textFill="#a19a9a">
                <font>
                   <Font name="Ubuntu" size="16.0" />
                </font>
@@ -67,12 +67,12 @@
             <Font name="Ubuntu Bold" size="17.0" />
          </font>
       </Label>
-      <Button layoutX="353.0" layoutY="390.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Continue">
+      <Button fx:id="btnContinue" layoutX="370.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnContinueOnAction" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Continue">
          <font>
             <Font name="Ubuntu" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="112.0" layoutY="390.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Cancel">
+      <Button fx:id="btnCancel" layoutX="159.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #cc7c7c;" text="Cancel">
          <font>
             <Font name="Ubuntu" size="15.0" />
          </font>
