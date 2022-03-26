@@ -6,7 +6,7 @@ This source code is available
 The source code is available to everyone under the standard [MIT License](https://choosealicense.com/licenses/mit/).
 
 ### Version
-0.0.1
+0.1.0
 
 ### License
 Copyright © 2022 -  B G Thakshila Nuwangi. All rights reserved.

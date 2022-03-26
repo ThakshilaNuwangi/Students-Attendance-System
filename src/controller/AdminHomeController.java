@@ -25,28 +25,33 @@ public class AdminHomeController {
     public void initialize() {
         lblGreeting.setText("Welcome " + SecurityContextHolder.getPrincipal().getName() + "!");
 
-        root.setOnKeyReleased(event -> {
-            switch (event.getCode()){
-                case F1:
-                    btnRecordAttendance.fire();
-                    break;
-                case F6:
-                    btnSignOut.fire();
-                    break;
-                case F3:
-                    btnUserProfiles.fire();
-                    break;
-                case F2:
-                    btnViewReports.fire();
-                    break;
-                case F4:
-                    btnUserManagement.fire();
-                    break;
-                case F5:
-                    btnBackup.fire();
-                    break;
-            }
-        });
+        if (root==null){
+            return;
+        } else {
+
+            root.setOnKeyReleased(event -> {
+                switch (event.getCode()) {
+                    case F1:
+                        btnRecordAttendance.fire();
+                        break;
+                    case F6:
+                        btnSignOut.fire();
+                        break;
+                    case F3:
+                        btnUserProfiles.fire();
+                        break;
+                    case F2:
+                        btnViewReports.fire();
+                        break;
+                    case F4:
+                        btnUserManagement.fire();
+                        break;
+                    case F5:
+                        btnBackup.fire();
+                        break;
+                }
+            });
+        }
     }
 
     public void btnRecordAttendanceOnAction(ActionEvent actionEvent) throws IOException {
