@@ -8,7 +8,7 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="student_attendance_system@localhost" uuid="3dca08be-777d-4bfa-8345-eeac5d55a60b">
+    <data-source source="LOCAL" name="student_attendance_system@localhost [2]" uuid="cabc1da8-3d1e-486e-b9d2-c1bb2f74b545">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

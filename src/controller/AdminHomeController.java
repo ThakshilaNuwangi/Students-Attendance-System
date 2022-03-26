@@ -37,7 +37,21 @@ public class AdminHomeController {
     public void btnViewReportsOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnUserProfilesOnAction(ActionEvent actionEvent) {
+    public void btnUserProfilesOnAction(ActionEvent actionEvent) throws IOException {
+        AnchorPane root = FXMLLoader.load(this.getClass().getResource("/view/UserProfileForm.fxml"));
+        Scene userProfileScene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(userProfileScene);
+        stage.setTitle("Students Attendance System : User Profile");
+        stage.setResizable(false);
+        stage.initOwner(lblGreeting.getScene().getWindow());
+        stage.show();
+
+        Platform.runLater(() -> {
+            stage.sizeToScene();
+            stage.centerOnScreen();
+        });
+
     }
 
     public void btnUserManagementOnAction(ActionEvent actionEvent) throws IOException {
@@ -56,7 +70,20 @@ public class AdminHomeController {
         });
     }
 
-    public void btnBackupOnAction(ActionEvent actionEvent) {
+    public void btnBackupOnAction(ActionEvent actionEvent) throws IOException {
+        AnchorPane root = FXMLLoader.load(this.getClass().getResource("/view/BackupAndRestoreForm.fxml"));
+        Scene recordAttendanceScene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(recordAttendanceScene);
+        stage.setTitle("Students Attendance System : Backup and Restore");
+        stage.setResizable(false);
+        stage.initOwner(lblGreeting.getScene().getWindow());
+        stage.show();
+
+        Platform.runLater(() -> {
+            stage.sizeToScene();
+            stage.centerOnScreen();
+        });
     }
 
     public void btnSignOutOnAction(ActionEvent actionEvent) throws IOException {

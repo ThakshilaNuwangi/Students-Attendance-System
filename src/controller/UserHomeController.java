@@ -17,9 +17,29 @@ public class UserHomeController {
     public Label lblGreeting;
     public Button btnRecordAttendance;
     public Button btnSignOut;
+    public AnchorPane root;
+    public Button btnUserProfile;
+    public Button btnViewReports;
 
     public void initialize(){
         lblGreeting.setText("Welcome "+SecurityContextHolder.getPrincipal().getName()+"!");
+
+        root.setOnKeyReleased(event -> {
+            switch (event.getCode()){
+                case F1:
+                    btnRecordAttendance.fire();
+                    break;
+                case F4:
+                    btnSignOut.fire();
+                    break;
+                case F3:
+                    btnUserProfile.fire();
+                    break;
+                case F2:
+                    btnViewReports.fire();
+                    break;
+            }
+        });
     }
 
     public void btnRecordAttendanceOnAction(ActionEvent actionEvent) throws IOException {
@@ -56,7 +76,20 @@ public class UserHomeController {
         ((Stage)(lblGreeting.getScene().getWindow())).close();
     }
 
-    public void btnUserProfileOnAction(ActionEvent actionEvent) {
+    public void btnUserProfileOnAction(ActionEvent actionEvent) throws IOException {
+        AnchorPane root = FXMLLoader.load(this.getClass().getResource("/view/UserProfileForm.fxml"));
+        Scene userProfileScene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(userProfileScene);
+        stage.setTitle("Students Attendance System : User Profile");
+        stage.setResizable(false);
+        stage.initOwner(lblGreeting.getScene().getWindow());
+        stage.show();
+
+        Platform.runLater(() -> {
+            stage.sizeToScene();
+            stage.centerOnScreen();
+        });
     }
 
     public void btnViewReportsOnAction(ActionEvent actionEvent) {

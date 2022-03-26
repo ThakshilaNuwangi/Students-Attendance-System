@@ -21,8 +21,8 @@
       </Label>
       <Button fx:id="btnRecordAttendance" layoutX="72.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnRecordAttendanceOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-width: 2px; -fx-border-radius: 5px;" />
       <Button fx:id="btnSignOut" layoutX="392.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnSignOutOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
-      <Button layoutX="72.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnUserProfileOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
-      <Button layoutX="392.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnViewReportsOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
+      <Button fx:id="btnUserProfile" layoutX="72.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnUserProfileOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
+      <Button fx:id="btnViewReports" layoutX="392.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnViewReportsOnAction" prefHeight="232.0" prefWidth="237.0" style="-fx-background-color: white; -fx-border-color: #273c75; -fx-border-radius: 5px; -fx-border-width: 2px;" />
       <ImageView fitHeight="206.0" fitWidth="190.0" layoutX="96.0" layoutY="161.0" onMouseClicked="#recordAttendanceOnMouseClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/recordAttendance.jpg" />
