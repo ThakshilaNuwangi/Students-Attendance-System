@@ -40,7 +40,20 @@ public class AdminHomeController {
     public void btnUserProfilesOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnUserManagementOnAction(ActionEvent actionEvent) {
+    public void btnUserManagementOnAction(ActionEvent actionEvent) throws IOException {
+        AnchorPane root = FXMLLoader.load(this.getClass().getResource("/view/UserManagementForm.fxml"));
+        Scene recordAttendanceScene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(recordAttendanceScene);
+        stage.setTitle("Students Attendance System : User Management");
+        stage.setResizable(false);
+        stage.initOwner(lblGreeting.getScene().getWindow());
+        stage.show();
+
+        Platform.runLater(() -> {
+            stage.sizeToScene();
+            stage.centerOnScreen();
+        });
     }
 
     public void btnBackupOnAction(ActionEvent actionEvent) {
