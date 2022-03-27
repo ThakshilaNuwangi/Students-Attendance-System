@@ -2,11 +2,15 @@
 
 ### Introduction
 This repository is where I develop a simple system to mark students attendance. I have developed this system to improve the knowledge about java FX, JDBC, java and other technologies.
-This source code is available
 The source code is available to everyone under the standard [MIT License](https://choosealicense.com/licenses/mit/).
 
+Login Page
 ![img](src/assets/image/image-1.png)
+
+Home Page
 ![img](src/assets/image/image-2.png)
+
+Attendance Recording Page
 ![img](src/assets/image/image-3.png)
 
 
