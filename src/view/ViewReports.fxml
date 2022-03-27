@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="636.0" prefWidth="638.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewReportsController">
+   <children>
+      <Label layoutX="242.0" layoutY="32.0" text="View Reports" textFill="#273c75">
+         <font>
+            <Font name="Ubuntu Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAttendance" layoutX="24.0" layoutY="102.0" prefHeight="484.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="colReportId" prefWidth="97.0" text="Report ID" />
+          <TableColumn fx:id="colDate" prefWidth="98.0" text="Date" />
+            <TableColumn fx:id="colStatus" prefWidth="135.0" text="Status" />
+            <TableColumn fx:id="colStudentId" prefWidth="154.0" text="Student ID" />
+            <TableColumn fx:id="colUsername" prefWidth="106.0" text="Username" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
